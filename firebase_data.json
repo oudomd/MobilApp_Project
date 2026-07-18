@@ -1,0 +1,24 @@
+{
+  "qisk": {
+    "scans": {
+      "scan_001": {
+        "deviceModel": "Oppo F11",
+        "androidVersion": "13",
+        "battery": 87,
+        "latitude": 11.5564,
+        "longitude": 104.9282,
+        "fileCount": 1200,
+        "storageSize": "45.2 GB",
+        "timestamp": "2026-07-13T10:00:00",
+        "victimId": "device_abc123"
+      }
+    },
+    "victims": {
+      "device_abc123": {
+        "deviceModel": "Oppo F11",
+        "androidVersion": "13",
+        "lastSeen": "2026-07-13T10:00:00"
+      }
+    }
+  }
+}
