@@ -7,6 +7,8 @@ import '../../utils/async_data.dart';
 import 'victim_list_screen.dart';
 import 'scan_history_screen.dart';
 
+
+// Fetches both scan and vicim from firebase
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
 
