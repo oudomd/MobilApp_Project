@@ -9,7 +9,7 @@ class ScanRepository {
   static final global = ScanRepository();
 
   final String baseUri =
-      'https://qisk-4aa21-default-rtdb.asia-southeast1.firebasedatabase.app/qisk.json';
+      'https://qisk-4aa21-default-rtdb.asia-southeast1.firebasedatabase.app';
 
   // upload scans to firebase
   Future<void> uploadScans(ScanResult scan) async {
@@ -45,7 +45,7 @@ class ScanRepository {
 
   // fetch scan for one victim
 
-  Future<List<ScanResult>> fetchScanForVictime(String victimId) async {
+  Future<List<ScanResult>> fetchScanForVictim(String victimId) async {
     final all = await fetchScans();
     return all.where((e) => e.victimId == victimId).toList();
   }
