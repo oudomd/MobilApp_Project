@@ -9,7 +9,6 @@ class ScanResult {
   final double? longitude;
   final int fileCount;
   final String storageSize;
-  final String scanType;
   final DateTime timestamp;
 
   ScanResult({
@@ -22,7 +21,6 @@ class ScanResult {
     this.longitude,
     required this.fileCount,
     required this.storageSize,
-    required this.scanType,
     required this.timestamp,
   });
 
@@ -37,7 +35,6 @@ class ScanResult {
       longitude: json['longitude']?.toDouble(),
       fileCount: json['fileCount'] ?? 0,
       storageSize: json['storageSize'] ?? '',
-      scanType: json['scanType'] ?? 'quick',
       timestamp: DateTime.parse(json['timestamp']),
     );
   }
@@ -52,7 +49,6 @@ class ScanResult {
       'longitude': longitude,
       'fileCount': fileCount,
       'storageSize': storageSize,
-      'scanType': scanType,
       'timestamp': timestamp.toIso8601String(),
     };
   }
